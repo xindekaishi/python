@@ -14,7 +14,6 @@ Example:
     或者
     python train.py
 """
-
 from splinter.browser import Browser
 from configparser import ConfigParser
 from time import sleep
