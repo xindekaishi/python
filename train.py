@@ -137,13 +137,13 @@ class hackTickets(object):
 
     def __init__(self):
         # 读取城市中文与三字码映射文件，获得转换后到城市信息-- “武汉”: "武汉,WHN"
-        self.city_codes = self.loadCityCode();
+        self.city_codes = self.loadCityCode()
 
         # 加载席别
         self.loadSeatType()
 
         # 读取配置文件，获得初始化参数
-        self.loadConfig();
+        self.loadConfig()
 
     def login(self):
         print("开始登录...")
@@ -296,7 +296,7 @@ class hackTickets(object):
         self.driver.visit(self.ticket_url)
 
         # 自动购买车票
-        self.buyTickets();
+        self.buyTickets()
 
-
-
+obj  = hackTickets();
+obj.start();
